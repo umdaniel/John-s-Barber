@@ -2,8 +2,18 @@ import React from 'react'
 
 import { FooterContainer, FooterWrap, FooterLinksContainer,
 FooterLinksWrapper, FooterLinkItems, FooterLinkTitle,
-FooterLink } from './FooterElements';
+FooterLink, SocialIconLink, SocialIcons,
+SocialLogo, SocialMedia, SocialMediaWrap,
+WebsiteRights } from './FooterElements';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+import { animateTopScroll as scroll } from 'react-scroll';
+
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <FooterContainer>
             <FooterWrap>
@@ -16,10 +26,27 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                                <FooterLink to="/signin">Reviews</FooterLink>
+                                <FooterLink to="/signin">Contact</FooterLink>
+                                <FooterLink to="/signin">Support</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to="/" onClick={scrollToTop}>
+                            John's Barber
+                        </SocialLogo>
+                        <WebsiteRights>john's barber © 2021</WebsiteRights>
+                    </SocialMediaWrap>
+                    <SocialIcons>
+                        <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                            <FaFacebook />
+                        </SocialIconLink>
+                        <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                            <FaInstagram />
+                        </SocialIconLink>
+                    </SocialIcons>
+                </SocialMedia>
             </FooterWrap>
         </FooterContainer>
     );
