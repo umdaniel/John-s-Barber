@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-color: #fff;
-background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+color: #85BDBF;
+background: ${({ lightBg }) => (lightBg ? '#C9FBFF' : '#57737A')};
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -51,7 +51,7 @@ padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
-color: #01bf71;
+color: #040F0F;
 font-size: 16px;
 line-height: 16px;
 font-weight: 700;
@@ -65,7 +65,7 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+color: ${({ lightText }) => (lightText ? '#C2FCF7' : '#57737A')};
 
 @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -77,7 +77,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
-color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+color: ${({ darkText }) => (darkText ? '#57737A' : '#040F0F')};
 `;
 
 export const BtnWrap = styled.div`
