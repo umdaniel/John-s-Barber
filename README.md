@@ -2,6 +2,9 @@ John's Barber:
 A web application designed for a small family owned barber shop located in Centreville, Va.
 The website displays what services are provided and information about the buisiness. 
 
+In the works:
+Reservation calendar system.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
